@@ -39,10 +39,10 @@
 		<input type="submit" value="${submit}">
 	</form>
 	<br/><br/>
-	<a href="home.jsp?theLocale=en_US">English</a> |
-	<a href="home.jsp?theLocale=my_MM">Burmese</a> |
-	<a href="home.jsp?theLocale=ko_KR">Korean</a> |
-	<a href="home.jsp?theLocale=es_ES">Spain</a> 
+	<a href="index.jsp?theLocale=en_US">English</a> |
+	<a href="index.jsp?theLocale=my_MM">Burmese</a> |
+	<a href="index.jsp?theLocale=ko_KR">Korean</a> |
+	<a href="index.jsp?theLocale=es_ES">Spain</a> 
 
 </body>
 </html>

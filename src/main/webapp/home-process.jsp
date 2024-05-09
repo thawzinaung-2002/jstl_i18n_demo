@@ -3,6 +3,7 @@
     
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 
 <fmt:setLocale value="${sessionScope.theLocale }" />
 <fmt:setBundle basename="com.jstl_lang_app.languages.labels" />
@@ -19,17 +20,15 @@
 		<fmt:message key="label.greeting" />, <fmt:message key="label.welcome"/>
 	</h2>
 	<p>
-		<fmt:message key="label.firstName" /> : 
-		
-		
-		
-		<br/></br>
+		<fmt:message key="label.firstName" /> : ${param.firstName }<br/></br>
 		<fmt:message key="label.lastName" /> : ${param.lastName}<br/></br>
 		<fmt:message key="label.email" /> : ${param.email}<br/></br>
 		<fmt:message key="label.password" /> : ${param.password}<br/></br>
 	</p>
 	
-	<a href="home.jsp">Go to Home</a>
+	<a href="index.jsp">
+		<fmt:message key="label.back" />
+	</a>
 
 </body>
 </html>
